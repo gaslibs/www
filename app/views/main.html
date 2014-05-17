@@ -1,11 +1,11 @@
 <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
 
 <div class="header">
-  <ul class="nav nav-pills pull-right">
+<!--   <ul class="nav nav-pills pull-right">
     <li class="active"><a ng-href="#">Home</a></li>
     <li><a ng-href="#">About</a></li>
     <li><a ng-href="#">Contact</a></li>
-  </ul>
+  </ul> -->
   <h3 class="text-muted">GasLamp.io</h3>
 </div>
 
@@ -21,7 +21,7 @@
   <h3>{{library.name}}</h3>
   <p>{{library.description}}</p>
   <p><b>Homepage:</b> {{library.homepage}}</p>
-  <p><b>Project Key:</b> {{library.projectKey}}</p>
+  <p><b>Project Key:</b> <input type="text" ng-model="library.projectKey" size="45" onClick="this.select();"></p>
 </div>
 
 <div class="footer">
